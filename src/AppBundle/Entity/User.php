@@ -22,6 +22,16 @@ class User
     protected $name;
 
     /**
+     * @ORM\Column(type="string", length=1024)
+     */
+    protected $description;
+
+    /**
+     * @ORM\Column(type="bool")
+     */
+    protected $active;
+
+    /**
      * Get id
      *
      * @return integer
